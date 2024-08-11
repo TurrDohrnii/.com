@@ -3,70 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minecraft Servers</title>
+    <title>Minecraft Servers and More</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background-color: #f4f4f4;
+            color: #333;
         }
         .container {
             width: 80%;
-            margin: 0 auto;
-            padding: 20px;
+            margin: auto;
+            overflow: hidden;
         }
-        h1 {
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #ccc 3px solid;
             text-align: center;
         }
-        .server-list {
-            list-style-type: none;
-            padding: 0;
+        header h1 {
+            margin: 0;
+            font-size: 24px;
         }
-        .server-item {
+        .server-info, .discord-embed, .redirect {
             background: #fff;
-            margin: 10px 0;
-            padding: 15px;
-            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .server-info table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .server-info th, .server-info td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .server-info th {
+            background: #f4f4f4;
+        }
+        .discord-embed iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+        }
+        .redirect {
+            text-align: center;
+        }
+        .redirect a {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #fff;
+            background: #007bff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .redirect a:hover {
+            background: #0056b3;
         }
     </style>
 </head>
 <body>
+    <header>
+        <div class="container">
+            <h1>Minecraft Servers and Community</h1>
+        </div>
+    </header>
+
     <div class="container">
-        <h1>Minecraft Servers</h1>
-        <ul class="server-list">
-            <li class="server-item">
-                <h2>Server 1</h2>
-                <p><strong>IP Address:</strong> 123.45.67.89</p>
-                <p><strong>Port:</strong> 25565</p>
-                <p><strong>Status:</strong> Online</p>
-            </li>
-            <li class="server-item">
-                <h2>Server 2</h2>
-                <p><strong>IP Address:</strong> 98.76.54.32</p>
-                <p><strong>Port:</strong> 25565</p>
-                <p><strong>Status:</strong> Offline</p>
-            </li>
-            <li class="server-item">
-                <h2>Server 3</h2>
-                <p><strong>IP Address:</strong> 192.168.1.1</p>
-                <p><strong>Port:</strong> 25565</p>
-                <p><strong>Status:</strong> Online</p>
-            </li>
-            <li class="server-item">
-                <h2>Server 4</h2>
-                <p><strong>IP Address:</strong> 172.16.0.1</p>
-                <p><strong>Port:</strong> 25565</p>
-                <p><strong>Status:</strong> Online</p>
-            </li>
-            <li class="server-item">
-                <h2>Server 5</h2>
-                <p><strong>IP Address:</strong> 10.0.0.1</p>
-                <p><strong>Port:</strong> 25565</p>
-                <p><strong>Status:</strong> Offline</p>
-            </li>
-        </ul>
+        <div class="server-info">
+            <h2>Minecraft Servers</h2>
+            <table>
+                <tr>
+                    <th>Server IP</th>
+                    <th>Modded</th>
+                </tr>
+                <tr>
+                    <td>vanilla.turrdohrnii.com</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>mc.placeholder.com</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>mc.placeholder.com</td>
+                    <td>No</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="discord-embed">
+            <h2>Join Our Discord</h2>
+            <iframe src="https://discord.com/widget?id=489099852878446612&theme=dark" allowtransparency="true"></iframe>
+        </div>
+
+        <div class="redirect">
+            <p>For more information, visit our <a href="http://amp.turrdohrnii.com">AMP site</a>.</p>
+        </div>
     </div>
 </body>
 </html>
